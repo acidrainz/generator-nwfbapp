@@ -1,4 +1,23 @@
 <?php
+date_default_timezone_set('<%=_.trim(timeZone)%>');
+
+if(class_exists('Memcache')){
+	$memcache = new Memcache;
+	$memcache->addServer('localhost', 11211);
+
+	$memcache_key = '<%= _.slugify(memoryName) %>';
+
+	if(!$memcache->get($memcache_key)){
+		$config_array = parse_ini_file("CONFIG.ini", true);
+		$memcache->set($memcache_key, $config_array, false, 1296000); // 15 days to expire
+	}else{
+		$config_array = $memcache->get($memcache_key);
+	}
+}else{
+	$config_array = parse_ini_file("CONFIG.ini", true);
+}
+
+$_ENV["CONFIG"] = $config_array;
 
 /*
  *---------------------------------------------------------------
@@ -35,7 +54,7 @@ if (defined('ENVIRONMENT'))
 		case 'development':
 			error_reporting(E_ALL);
 		break;
-	
+
 		case 'testing':
 		case 'production':
 			error_reporting(0);
@@ -98,7 +117,7 @@ if (defined('ENVIRONMENT'))
 	// if your controller is not in a sub-folder within the "controllers" folder
 	// $routing['directory'] = '';
 
-	// The controller class file name.  Example:  Mycontroller.php
+	// The controller class file name.  Example:  Mycontroller
 	// $routing['controller'] = '';
 
 	// The controller function you wish to be called.
@@ -163,6 +182,7 @@ if (defined('ENVIRONMENT'))
 	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
 
 	// The PHP file extension
+	// this global constant is deprecated.
 	define('EXT', '.php');
 
 	// Path to the system folder
@@ -198,7 +218,7 @@ if (defined('ENVIRONMENT'))
  * And away we go...
  *
  */
-require_once BASEPATH.'core/CodeIgniter'.EXT;
+require_once BASEPATH.'core/CodeIgniter.php';
 
 /* End of file index.php */
 /* Location: ./index.php */

@@ -51,6 +51,22 @@ nwfbapp.prototype.askFor = function askFor() {
       message: 'Your time zone? (e.g.: America/Sao_Paulo)'
     },
     {
+      name: 'app_id',
+      message: 'Your App ID?'
+    },
+    {
+      name: 'app_secret',
+      message: 'Your  App secret key?'
+    },
+    {
+      name: 'fan_page_id',
+      message: 'Your Fan Page ID? '
+    },
+    {
+      name: 'fb_url',
+      message: 'Your time FB URL? '
+    },
+    {
       name: 'memoryName',
       message: 'These settings you just entered are cached in memory if you have memcache installed.\nEnter the name/key to save these settings: (e.g: config_project)'
     }
@@ -59,14 +75,11 @@ nwfbapp.prototype.askFor = function askFor() {
   this.prompt(prompts, function (props) {
     this.projectName = (props.projectName != "") ? props.projectName : "Project Name";
     this.projectURL = (props.projectURL != "") ? props.projectURL : "http://localhost/";
-
     this.dbHostname = (props.dbHostname != "") ? props.dbHostname : '127.0.0.1:3306';
     this.dbUsername = (props.dbUsername != "") ? props.dbUsername : 'root';
     this.dbPassword = (props.dbPassword != "") ? props.dbPassword : 'root';
     this.dbDatabase = (props.dbDatabase != "") ? props.dbDatabase : 'database_name';
-
     this.timeZone = (props.timeZone != "") ? props.timeZone : 'America/Sao_Paulo';
-
     this.memoryName = (props.memoryName != "") ? props.memoryName : 'config_project';
 
     cb();
@@ -101,6 +114,11 @@ nwfbapp.prototype.app = function app() {
     + '\ndb='+this.dbDatabase
     + '\nuser='+this.dbUsername
     + '\npass='+this.dbPassword;
+    + '\napp_id='+this.app_id;
+    + '\nfan_page_id='+this.fan_page_id;
+    + '\nfb_url='+this.fb_url;
+    + '\napp_secret='+this.app_secret;
+
 
   this.write('CONFIG.ini', configText);
 };
