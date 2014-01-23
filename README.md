@@ -1,6 +1,7 @@
 # Nuworks Facebook App Generator
 
-Credits to
+Credits to [Tiago Vasconcelos](https://github.com/tisvasconcelos)
+
 
 A generator for Yeoman, this generator create a codeigniter (php framework) structure.
 
