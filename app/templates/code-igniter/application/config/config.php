@@ -360,3 +360,17 @@ $config['proxy_ips'] = '';
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */
+/*Facebook  Config*/
+$config['app_id']     = '451568184954704';
+$config['secret']     = '370af8bfdd5b9bcef726a2ceca9f6749';
+$config['cookie']     = true;
+$config['domain']     = '';
+$config['file_upload']  = '';
+$config['fan_page_id']  = '552696941433189';
+$config['fb_url']     = 'https://www.facebook.com/pages/HeinzPH/'.$config['fan_page_id'].'/?sk=app_'.$config['app_id'];
+$config['canvas']     = 0;
+$config['fbconnect']  = 0;
+$config['req_perms']  ='user_likes,user_birthday,user_hometown,email';
+$config['next']     = 'https://www.facebook.com/HeinzPH/app_'.$config['app_id'].'?ref=ts';
+$config['cancel_url']   = 'https://www.facebook.com/HeinzPH/';
+

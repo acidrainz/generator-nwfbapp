@@ -1,5 +1,6 @@
 # Nuworks Facebook App Generator
 
+Credits to
 
 A generator for Yeoman, this generator create a codeigniter (php framework) structure.
 
@@ -13,8 +14,8 @@ A generator for Yeoman, this generator create a codeigniter (php framework) stru
 
 #### This generator will create a CodeIgniter (Version 2.1.4) structure, with some changes:
 
-- Front-end files are in the folder templates/default/...
-- The folder application/view doesn't exist
+- Added facebook configuration
+
 
 ## Configuration
 
