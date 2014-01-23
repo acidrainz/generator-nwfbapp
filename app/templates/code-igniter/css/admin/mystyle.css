@@ -1,0 +1,158 @@
+/*-----------------------------------------------
+.	Coded by:  Nuworks Interactive Labs Inc.	    .
+.	Website:   http://www.nuworks.ph/			        .
+.	Inquiries: biz@nuworks.ph					            .
+-------------------------------------------------*/
+a{ cursor: pointer;}
+.dnone{ display: none !important;}
+
+/*	TOP BAR
+----------------------*/
+.logo {
+	color: #FFF600;
+    display: block;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1;
+    margin: 0 10px 0 0;
+    padding: 10px 0;
+}
+	.logo a {
+		color: #FFF600;
+	}
+	.logo a:hover {
+		color: #FFF600;
+		text-decoration: none;
+	}
+.modal {
+  position: absolute;
+  top: 10%;
+}
+
+@media all and (min-height: 40em) {
+  .modal {
+    position: fixed;
+  }
+  .modal-body {
+    max-height: 35em;
+    overflow-y: auto;
+  }
+}
+
+
+.error {
+	color: #f00;
+	font-size: 12px;
+}
+.font14 {font-size: 14px !important;}
+
+.form-vertical .modal-footer {
+  margin-bottom: -20px;
+}
+
+.btn-export-data {
+  top: 20px;
+  position: relative;
+}
+
+
+/*--- generic form---*/
+    form ul{
+      float: left;
+      list-style: none;
+      display: block;
+      padding: 0;
+      background: #fff;
+      padding: 20px;
+      margin: 0;
+      width: 100%;
+      box-sizing:border-box;
+      -moz-box-sizing:border-box; /* Firefox */
+    }
+      form ul li{
+        float: left;
+        display: block;
+        padding:5px;
+        margin:0;
+        width: 100%;
+      box-sizing:border-box;
+      -moz-box-sizing:border-box; /* Firefox */
+      }
+      form ul li label{
+        display: inline-block;
+        padding:8px 20px 8px 0;
+        margin: 0px;
+        width: 120px;
+      }
+
+        form ul li label .small{
+          width: 120px;
+        }
+
+        form ul li label .large{
+          width: 220px;
+        }
+    /*-- /generic form---*/
+
+
+.page-header {
+  padding: 50px 0 0;
+  margin: 0 0 20px;
+  border-bottom: 1px solid #ddd;
+  color:#161616;
+  text-shadow:0px 1px #fff;
+}
+.page-controls{
+  position: relative;
+  float: right;
+  margin-top: -65px
+}
+
+.advance-search{
+  display: none;
+  position: absolute;
+  right: 0;
+  z-index: 2
+}
+.form-content{
+  padding: 20px;
+  background: rgba(0,0,0,0.8);
+}
+  .form-content .add-on{
+    width: 100px;
+    text-align: right;
+  }
+  .form-content .input-prepend{
+    display: block;
+    margin-bottom: 10px;
+  }
+/*.nav .user-accounts,.nav .user-level,.nav .promo-joiners,.nav .facebook-id,.nav .birthday-list{
+  display: none;
+}
+*/
+
+
+/* override*/
+.table-heading thead > tr:first-child, .thead {
+   background: rgb(246,248,249); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(246,248,249,1) 0%, rgba(229,235,238,1) 50%, rgba(215,222,227,1) 51%, rgba(245,247,249,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(246,248,249,1)), color-stop(50%,rgba(229,235,238,1)), color-stop(51%,rgba(215,222,227,1)), color-stop(100%,rgba(245,247,249,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
+
+}
+
+.promo-joiner{
+  background-color: #FFEAEA
+}
+
+textarea#content{
+  width: 100%;
+}
+
+.nicEdit-main{
+  background-color: #fff
+}

@@ -1,0 +1,14 @@
+RewriteEngine On
+SetEnv TZ Asia/Taipei
+# If the user types just "admin".
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^admin$ admin\.php [L,QSA]
+# If the user enter in any admin section, like "admin/section".
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^admin\/(.*)$ admin\.php/$1 [L,QSA]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !index\.php
+RewriteRule ^(.*)$ index.php/$1 [L]

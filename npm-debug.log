@@ -1,0 +1,70 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'link',
+1 verbose cli   'https://github.com/acidrainz/generator-nwfbapp' ]
+2 info using npm@1.2.25
+3 info using node@v0.10.10
+4 verbose install where,what [ 'C:\\Users\\CEDC_1305_020\\AppData\\Roaming\\npm',
+4 verbose install   [ 'https://github.com/acidrainz/generator-nwfbapp' ] ]
+5 verbose read json C:\Users\CEDC_1305_020\AppData\Roaming\npm\package.json
+6 verbose read json C:\Users\CEDC_1305_020\AppData\Roaming\npm\node_modules\bower\package.json
+7 verbose read json C:\Users\CEDC_1305_020\AppData\Roaming\npm\node_modules\generator-backbone\package.json
+8 verbose read json C:\Users\CEDC_1305_020\AppData\Roaming\npm\node_modules\generator-backbone-mocha\package.json
+9 verbose read json C:\Users\CEDC_1305_020\AppData\Roaming\npm\node_modules\generator-generator\package.json
+10 verbose read json C:\Users\CEDC_1305_020\AppData\Roaming\npm\node_modules\generator-mocha\package.json
+11 verbose read json C:\Users\CEDC_1305_020\AppData\Roaming\npm\node_modules\generator-wp-theme\package.json
+12 verbose read json C:\Users\CEDC_1305_020\AppData\Roaming\npm\node_modules\grunt\package.json
+13 verbose read json C:\Users\CEDC_1305_020\AppData\Roaming\npm\node_modules\grunt-cli\package.json
+14 verbose read json C:\Users\CEDC_1305_020\AppData\Roaming\npm\node_modules\less\package.json
+15 verbose read json C:\Users\CEDC_1305_020\AppData\Roaming\npm\node_modules\yo\package.json
+16 verbose read json C:\Users\CEDC_1305_020\AppData\Roaming\npm\package.json
+17 verbose cache add [ 'https://github.com/acidrainz/generator-nwfbapp', null ]
+18 verbose cache add name=undefined spec="https://github.com/acidrainz/generator-nwfbapp" args=["https://github.com/acidrainz/generator-nwfbapp",null]
+19 verbose parsed url { protocol: 'https:',
+19 verbose parsed url   slashes: true,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: 'github.com',
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: 'github.com',
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: '/acidrainz/generator-nwfbapp',
+19 verbose parsed url   path: '/acidrainz/generator-nwfbapp',
+19 verbose parsed url   href: 'https://github.com/acidrainz/generator-nwfbapp' }
+20 silly lockFile 4fdbb08b--com-acidrainz-generator-nwfbapp https://github.com/acidrainz/generator-nwfbapp
+21 verbose lock https://github.com/acidrainz/generator-nwfbapp C:\Users\CEDC_1305_020\AppData\Roaming\npm-cache\4fdbb08b--com-acidrainz-generator-nwfbapp.lock
+22 verbose addRemoteTarball [ 'https://github.com/acidrainz/generator-nwfbapp', null ]
+23 info retry fetch attempt 1 at 17:56:36
+24 verbose fetch to= C:\Users\CEDC_1~1\AppData\Local\Temp\npm-4476\1390470996595-0.8534211805090308\tmp.tgz
+25 http GET https://github.com/acidrainz/generator-nwfbapp
+26 http 200 https://github.com/acidrainz/generator-nwfbapp
+27 verbose tar unpack C:\Users\CEDC_1~1\AppData\Local\Temp\npm-4476\1390470996595-0.8534211805090308\tmp.tgz
+28 silly lockFile 94dcd672-96595-0-8534211805090308-package C:\Users\CEDC_1~1\AppData\Local\Temp\npm-4476\1390470996595-0.8534211805090308\package
+29 verbose lock C:\Users\CEDC_1~1\AppData\Local\Temp\npm-4476\1390470996595-0.8534211805090308\package C:\Users\CEDC_1305_020\AppData\Roaming\npm-cache\94dcd672-96595-0-8534211805090308-package.lock
+30 silly lockFile 37d6e88f-96595-0-8534211805090308-tmp-tgz C:\Users\CEDC_1~1\AppData\Local\Temp\npm-4476\1390470996595-0.8534211805090308\tmp.tgz
+31 verbose lock C:\Users\CEDC_1~1\AppData\Local\Temp\npm-4476\1390470996595-0.8534211805090308\tmp.tgz C:\Users\CEDC_1305_020\AppData\Roaming\npm-cache\37d6e88f-96595-0-8534211805090308-tmp-tgz.lock
+32 silly gunzTarPerm modes [ '755', '644' ]
+33 verbose read json C:\Users\CEDC_1~1\AppData\Local\Temp\npm-4476\1390470996595-0.8534211805090308\package\package.json
+34 error not a package C:\Users\CEDC_1~1\AppData\Local\Temp\npm-4476\1390470996595-0.8534211805090308\tmp.tgz
+35 silly lockFile 94dcd672-96595-0-8534211805090308-package C:\Users\CEDC_1~1\AppData\Local\Temp\npm-4476\1390470996595-0.8534211805090308\package
+36 silly lockFile 94dcd672-96595-0-8534211805090308-package C:\Users\CEDC_1~1\AppData\Local\Temp\npm-4476\1390470996595-0.8534211805090308\package
+37 silly lockFile 37d6e88f-96595-0-8534211805090308-tmp-tgz C:\Users\CEDC_1~1\AppData\Local\Temp\npm-4476\1390470996595-0.8534211805090308\tmp.tgz
+38 silly lockFile 37d6e88f-96595-0-8534211805090308-tmp-tgz C:\Users\CEDC_1~1\AppData\Local\Temp\npm-4476\1390470996595-0.8534211805090308\tmp.tgz
+39 silly lockFile 4fdbb08b--com-acidrainz-generator-nwfbapp https://github.com/acidrainz/generator-nwfbapp
+40 silly lockFile 4fdbb08b--com-acidrainz-generator-nwfbapp https://github.com/acidrainz/generator-nwfbapp
+41 error Error: ENOENT, open 'C:\Users\CEDC_1~1\AppData\Local\Temp\npm-4476\1390470996595-0.8534211805090308\package\package.json'
+42 error If you need help, you may report this log at:
+42 error     <http://github.com/isaacs/npm/issues>
+42 error or email it to:
+42 error     <npm-@googlegroups.com>
+43 error System Windows_NT 6.2.9200
+44 error command "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "link" "https://github.com/acidrainz/generator-nwfbapp"
+45 error cwd c:\xampp\htdocs\yeoman\dev\generator-nwfbapp
+46 error node -v v0.10.10
+47 error npm -v 1.2.25
+48 error path C:\Users\CEDC_1~1\AppData\Local\Temp\npm-4476\1390470996595-0.8534211805090308\package\package.json
+49 error code ENOENT
+50 error errno 34
+51 verbose exit [ 34, true ]
