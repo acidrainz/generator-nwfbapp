@@ -48,23 +48,23 @@ nwfbapp.prototype.askFor = function askFor() {
     },
     {
       name: 'timeZone',
-      message: 'Your time zone? (e.g.: America/Sao_Paulo)'
+      message: 'Your time zone? (e.g.: Asia/Manila)'
     },
     {
-      name: 'app_id',
+      name: 'fbAppId',
       message: 'Your App ID?'
     },
     {
-      name: 'app_secret',
+      name: 'fbAppSecret',
       message: 'Your  App secret key?'
     },
     {
-      name: 'fan_page_id',
+      name: 'fbFanPageId',
       message: 'Your Fan Page ID? '
     },
     {
-      name: 'fb_url',
-      message: 'Your time FB URL? '
+      name: 'fbUrl',
+      message: 'Your FB URL? '
     },
     {
       name: 'memoryName',
@@ -116,12 +116,12 @@ nwfbapp.prototype.app = function app() {
     + '\nhost='+this.dbHostname
     + '\ndb='+this.dbDatabase
     + '\nuser='+this.dbUsername
-    + '\npass='+this.dbPassword;
+    + '\npass='+this.dbPassword
     + '\n[facebook]'
-    + '\napp_id='+this.app_id;
-    + '\nfan_page_id='+this.fan_page_id;
-    + '\nfb_url='+this.fb_url;
-    + '\napp_secret='+this.app_secret;
+    + '\napp_id='+this.fbAppId
+    + '\nfan_page_id='+this.fbFanPageId
+    + '\nfb_url='+this.fbUrl
+    + '\napp_secret='+this.fbAppSecret
 
 
   this.write('CONFIG.ini', configText);
