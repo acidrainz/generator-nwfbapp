@@ -72,6 +72,8 @@ nwfbapp.prototype.askFor = function askFor() {
     }
   ];
 
+
+
   this.prompt(prompts, function (props) {
     this.projectName = (props.projectName != "") ? props.projectName : "Project Name";
     this.projectURL = (props.projectURL != "") ? props.projectURL : "http://localhost/";
@@ -80,10 +82,10 @@ nwfbapp.prototype.askFor = function askFor() {
     this.dbPassword = (props.dbPassword != "") ? props.dbPassword : 'root';
     this.dbDatabase = (props.dbDatabase != "") ? props.dbDatabase : 'database_name';
     this.timeZone = (props.timeZone != "") ? props.timeZone : 'Asia/Manila';
-    this.app_id = (props.fbAppId != "") ? props.fbAppId : 'APP ID';
-    this.app_id = (props.fbFanPageId != "") ? props.fbFanPageId : 'FAN PAGE ID';
-    this.app_id = (props.fbUrl != "") ? props.fbUrl : 'FB URL';
-    this.app_id = (props.fbAppSecret != "") ? props.fbAppSecret : 'APP SECRET';
+    this.fbAppId = (props.fbAppId != "") ? props.fbAppId : 'APP ID';
+    this.fbFanPageId = (props.fbFanPageId != "") ? props.fbFanPageId : 'FAN PAGE ID';
+    this.fbUrl = (props.fbUrl != "") ? props.fbUrl : 'FB URL';
+    this.fbAppSecret = (props.fbAppSecret != "") ? props.fbAppSecret : 'APP SECRET';
     this.memoryName = (props.memoryName != "") ? props.memoryName : 'config_project';
     cb();
   }.bind(this));
@@ -92,15 +94,12 @@ nwfbapp.prototype.askFor = function askFor() {
 nwfbapp.prototype.app = function app() {
   this.directory('code-igniter/application', 'application');
   this.directory('code-igniter/system', 'system');
-  this.directory('code-igniter/templates', 'templates');
   this.directory('code-igniter/css', 'css');
   this.directory('code-igniter/fonts', 'fonts');
   this.directory('code-igniter/images', 'images');
   this.directory('code-igniter/js', 'js');
   this.directory('code-igniter/administrator', 'administrator');
   this.directory('code-igniter/plugins', 'plugins');
-  this.copy('_package.json', 'templates/package.json');
-  this.directory('code-igniter/.htaccess', '.htaccess');
   this.copy('_htaccess', '.htaccess');
   this.template('code-igniter/admin.php', 'admin.php');
   this.template('code-igniter/data.sql', 'data.sql');
