@@ -28,7 +28,7 @@ A generator for Yeoman, this generator create a codeigniter (php framework) stru
 - Database username (default: root)
 - Database password (default: root)
 - Database name (default: database_name)
-- Timezone (default: America/Sao_Paulo)
+- Timezone (default: Asia/Manila)
 
 These settings are in the file CONFIG.ini, located in the project root, you can change it at any time.
 
