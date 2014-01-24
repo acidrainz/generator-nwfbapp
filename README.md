@@ -1,7 +1,6 @@
 # CodeIgniter Facebook App Generator
 
 Credits to [Tiago Vasconcelos](https://github.com/tisvasconcelos)
-initial commit
 
 A generator for Yeoman, this generator create a codeigniter (php framework) structure with facebook API integration.
 
