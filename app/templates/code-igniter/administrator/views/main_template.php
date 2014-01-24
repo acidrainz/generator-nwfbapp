@@ -15,22 +15,15 @@
     <link rel="apple-touch-icon-precomposed" href="<?=base_url()?>images/admin/ico/apple-touch-icon-57-precomposed.png">
     <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
     <!-- css -->
+    <!--[if IE 7]><link rel="stylesheet" type="text/css" href="<?=base_url()?>fonts/admin/font-awesome-ie7.min.css" /><![endif]-->
     <link rel="stylesheet" type="text/css" href="<?=base_url()?>fonts/admin/fonts.css" />
     <link rel="stylesheet" type="text/css" href="<?=base_url()?>fonts/admin/font-awesome.min.css" />
-    <!--[if IE 7]><link rel="stylesheet" type="text/css" href="<?=base_url()?>fonts/admin/font-awesome-ie7.min.css" /><![endif]-->
-
+    <link href="<?=base_url()?>plugins/jquery-ui/css/smoothness/jquery-ui-1.10.0.custom.css" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="<?=base_url()?>css/admin/bootstrap.css">
     <link rel="stylesheet" href="<?=base_url()?>css/admin/bootstrap-responsive.css">
     <link rel="stylesheet" href="<?=base_url()?>css/admin/mystyle.css" />
 
-    <!-- jquery ui -->
-    <link href="<?=base_url()?>plugins/jquery-ui/css/smoothness/jquery-ui-1.10.0.custom.css" rel="stylesheet">
-    <script src="<?=base_url()?>js/jquery.min.js"></script>
-    <script src="<?=base_url()?>plugins/jquery-ui/js/jquery-ui-1.10.0.custom.js"></script>
-    <!-- /jquery ui -->
 
-    <script src="<?=base_url()?>js/admin/bootstrap.min.js"></script>
-    <script src="<?=base_url()?>js/admin/custom.js"></script>
 </head>
     <body>
         <!-- header -->
@@ -97,6 +90,11 @@
     <p><small>Managed with <a href="http://www.nuworks.ph" target="_blank">NuWorks Interactive Labs, Inc.</a></small></p>
 
 </section>
+ <!-- jquery  -->
+    <script src="<?=base_url()?>js/jquery.min.js"></script>
+    <script src="<?=base_url()?>plugins/jquery-ui/js/jquery-ui-1.10.0.custom.js"></script>
+    <script src="<?=base_url()?>js/admin/bootstrap.min.js"></script>
+    <script src="<?=base_url()?>js/admin/custom.js"></script>
 </body>
 
 </html>
