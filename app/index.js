@@ -79,7 +79,7 @@ nwfbapp.prototype.askFor = function askFor() {
     this.dbUsername = (props.dbUsername != "") ? props.dbUsername : 'root';
     this.dbPassword = (props.dbPassword != "") ? props.dbPassword : 'root';
     this.dbDatabase = (props.dbDatabase != "") ? props.dbDatabase : 'database_name';
-    this.timeZone = (props.timeZone != "") ? props.timeZone : 'Asia Manila';
+    this.timeZone = (props.timeZone != "") ? props.timeZone : 'Asia/Manila';
     this.app_id = (props.app_id != "") ? props.app_id : 'APP ID';
     this.app_id = (props.fan_page_id != "") ? props.fan_page_id : 'FAN PAGE ID';
     this.app_id = (props.fb_url != "") ? props.fb_url : 'FB URL';
