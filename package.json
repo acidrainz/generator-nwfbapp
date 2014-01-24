@@ -5,17 +5,17 @@
   "keywords": [
     "yeoman-generator codeigniter php"
   ],
-  "homepage": "https://github.com/acidrainz/generator-nwfbapp",
-  "bugs": "https://github.com/acidrainz/generator-nwfbapp/issues",
+  "homepage": "http://gitlab.nuworks.dev/ian.pansensoy/generator-nwfbapp",
+  "bugs": "http://gitlab.nuworks.dev/ian.pansensoy/generator-nwfbapp/issues",
   "author": {
     "name": "Nuworks Interactive Inc.",
     "email": "",
-    "url": "https://github.com/acidrainz/"
+    "url": "http://gitlab.nuworks.dev/ian.pansensoy/"
   },
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/acidrainz/generator-nwfbapp.git"
+    "url": "git://gitlab.nuworks.dev/ian.pansensoy/generator-nwfbapp.git"
   },
   "scripts": {
     "test": "mocha"
