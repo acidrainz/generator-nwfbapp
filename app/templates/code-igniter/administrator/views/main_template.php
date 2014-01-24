@@ -19,13 +19,13 @@
     <link rel="stylesheet" type="text/css" href="<?=base_url()?>fonts/admin/font-awesome.min.css" />
     <!--[if IE 7]><link rel="stylesheet" type="text/css" href="<?=base_url()?>fonts/admin/font-awesome-ie7.min.css" /><![endif]-->
 
-	<link rel="stylesheet" media="screen" href="<?=base_url()?>css/admin/bootstrap.css">
+    <link rel="stylesheet" media="screen" href="<?=base_url()?>css/admin/bootstrap.css">
     <link rel="stylesheet" href="<?=base_url()?>css/admin/bootstrap-responsive.css">
     <link rel="stylesheet" href="<?=base_url()?>css/admin/mystyle.css" />
 
     <!-- jquery ui -->
     <link href="<?=base_url()?>plugins/jquery-ui/css/smoothness/jquery-ui-1.10.0.custom.css" rel="stylesheet">
-   <script src="bower_components/jquery/jquery.js"></script>
+    <script src="<?=base_url()?>js/jquery.min.js"></script>
     <script src="<?=base_url()?>plugins/jquery-ui/js/jquery-ui-1.10.0.custom.js"></script>
     <!-- /jquery ui -->
 

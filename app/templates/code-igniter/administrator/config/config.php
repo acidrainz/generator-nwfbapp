@@ -9,7 +9,7 @@
 |
 */
 
-$config['project']             = $_ENV["CONFIG"]['project'];
+$config['project']           = $_ENV["CONFIG"]['project'];
 $config['project_name'] = $config['project']['name'];
 
 /*
