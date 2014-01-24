@@ -1,4 +1,4 @@
-# Nuworks Facebook App Generator
+# CodeIgniter Facebook App Generator
 
 Credits to [Tiago Vasconcelos](https://github.com/tisvasconcelos)
 
