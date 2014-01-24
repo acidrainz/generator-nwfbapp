@@ -3,7 +3,7 @@
 Credits to [Tiago Vasconcelos](https://github.com/tisvasconcelos)
 
 
-A generator for Yeoman, this generator create a codeigniter (php framework) structure.
+A generator for Yeoman, this generator create a codeigniter (php framework) structure with facebook API integration.
 
 ## Getting started
 - Make sure you have [yo](https://github.com/yeoman/yo) installed:
