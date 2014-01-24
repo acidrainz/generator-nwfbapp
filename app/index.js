@@ -64,7 +64,7 @@ nwfbapp.prototype.askFor = function askFor() {
     },
     {
       name: 'fbUrl',
-      message: 'Your FB URL? '
+      message: 'Your Fan Page URL? '
     },
     {
       name: 'memoryName',
@@ -80,10 +80,10 @@ nwfbapp.prototype.askFor = function askFor() {
     this.dbPassword = (props.dbPassword != "") ? props.dbPassword : 'root';
     this.dbDatabase = (props.dbDatabase != "") ? props.dbDatabase : 'database_name';
     this.timeZone = (props.timeZone != "") ? props.timeZone : 'Asia/Manila';
-    this.app_id = (props.app_id != "") ? props.app_id : 'APP ID';
-    this.app_id = (props.fan_page_id != "") ? props.fan_page_id : 'FAN PAGE ID';
-    this.app_id = (props.fb_url != "") ? props.fb_url : 'FB URL';
-    this.app_id = (props.app_secret != "") ? props.app_secret : 'APP SECRET';
+    this.app_id = (props.fbAppId != "") ? props.fbAppId : 'APP ID';
+    this.app_id = (props.fbFanPageId != "") ? props.fbFanPageId : 'FAN PAGE ID';
+    this.app_id = (props.fbUrl != "") ? props.fbUrl : 'FB URL';
+    this.app_id = (props.fbAppSecret != "") ? props.fbAppSecret : 'APP SECRET';
     this.memoryName = (props.memoryName != "") ? props.memoryName : 'config_project';
     cb();
   }.bind(this));
@@ -111,7 +111,6 @@ nwfbapp.prototype.app = function app() {
     = '[project]'
     + '\nname='+this.projectName
     + '\nurl='+this.projectURL
-    + '\ntemplates=templates/default/'
     + '\n[database]'
     + '\nhost='+this.dbHostname
     + '\ndb='+this.dbDatabase
