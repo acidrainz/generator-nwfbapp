@@ -5,9 +5,13 @@ Credits to [Tiago Vasconcelos](https://github.com/tisvasconcelos)
 A generator for Yeoman, this generator create a codeigniter (php framework) structure with facebook API integration.
 
 ## Getting started
+
 - Make sure you have [yo](https://github.com/yeoman/yo) installed:
+
     `npm install -g yo`
-- Install the generator: `npm install -g generator-nwfbapp`
+
+- Install the generator: `$ npm install git+http://gitlab.nuworks.dev/ian.pansensoy/generator-nwfbapp.git -g`
+
 - Run: `yo nwfbapp`
 
 ## Important
